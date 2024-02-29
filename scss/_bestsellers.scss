@@ -1,0 +1,110 @@
+.bestsellers {
+  padding-top: 40px;
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %subtitle;
+  }
+  &__show {
+    @extend %linkViewAll;
+  }
+
+  &__products {
+    display: flex;
+    gap: 40px 35px;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 0 1 320px;
+  }
+
+  &__prices {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__link {
+    @extend %productsName;
+    color: #3a3a3a;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 15px;
+  }
+
+  .prices {
+    padding-top: 20px;
+    &__withoutdiscount {
+      color: #000;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      letter-spacing: 0.6px;
+    }
+
+    &__withdiscount {
+      color: #8b8b8b;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 26px */
+      letter-spacing: 0.6px;
+      text-decoration: line-through;
+    }
+
+    &__discount {
+      color: #ff32a1;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 26px */
+      letter-spacing: 0.6px;
+    }
+    &__add {
+      display: none;
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    img {
+      width: 100%;
+      max-height: 275px;
+      object-fit: cover;
+      transition: all 0.5s ease;
+      border-radius: 7px;
+      &:hover {
+        transform: scale(1.1);
+        border-radius: 7px;
+      }
+    }
+  }
+  &__discount-mobile {
+    display: none;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 6px;
+    background: #fff3ff;
+    padding: 10px;
+    color: #ff32a1;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}

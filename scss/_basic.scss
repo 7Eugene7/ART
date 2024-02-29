@@ -1,0 +1,75 @@
+body {
+  font-family: Montserrat;
+  a {
+    cursor: pointer;
+  }
+}
+.container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+%link {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+%btnCatalog {
+  border-radius: 5px;
+  border: 2px solid #f188f2;
+  background: #f188f2;
+  color: #fff;
+}
+.content {
+  padding-top: 190px;
+}
+
+%subtitle {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  letter-spacing: 1.2px;
+}
+
+%productsName {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.54px;
+  text-align: center;
+  transition: all 1s ease;
+  &:hover {
+    color: #f188f2;
+  }
+}
+
+%linkViewAll {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  letter-spacing: 0.48px;
+  padding-left: 20px;
+  position: relative;
+  top: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 4px;
+    width: 13px;
+    height: 13px;
+    background: url("../img/icons/arrow.svg");
+  }
+}
